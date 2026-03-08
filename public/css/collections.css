@@ -1,0 +1,114 @@
+/* ===== COLLECTIONS SECTION ===== */
+.collections-section {
+    padding: var(--space-3xl) var(--space-xl);
+    background: var(--color-white);
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-lg);
+    max-width: var(--container-wide);
+    margin: 0 auto;
+}
+
+.collection-card {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+    group: true;
+}
+
+.collection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            transparent 40%,
+            rgba(0, 0, 0, 0.7) 100%);
+    z-index: 2;
+    transition: all var(--transition-normal);
+}
+
+.collection-card:hover::before {
+    background: linear-gradient(to bottom,
+            rgba(26, 58, 92, 0.2) 0%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.collection-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.collection-card:hover .collection-card-image {
+    transform: scale(1.08);
+}
+
+.collection-card-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: var(--space-lg);
+    color: var(--color-white);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: transform var(--transition-normal);
+}
+
+.collection-card:hover .collection-card-name {
+    transform: translateY(-5px);
+}
+
+.collection-card-overlay-btn {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: var(--space-lg);
+    right: var(--space-lg);
+    z-index: 4;
+    background: var(--color-green);
+    color: var(--color-white);
+    padding: var(--space-sm) var(--space-md);
+    text-align: center;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--transition-normal);
+}
+
+.collection-card:hover .collection-card-overlay-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .collection-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .collection-card-name {
+        font-size: var(--font-size-sm);
+        padding: var(--space-md);
+    }
+}

@@ -1,0 +1,239 @@
+{
+    "products": [
+        {
+            "id": "WAH-1001",
+            "category": "oil-paintings",
+            "image": "/assets/images/product1.png",
+            "name_en": "Handmade Oil Painting - Abstract Textured White Canvas",
+            "name_ar": "لوحة زيتية يدوية - قماش أبيض مزخرف تجريدي",
+            "description_en": "High Quality 100% Handmade Oil Painting on Canvas of textured white abstract design. Perfect for modern living rooms and offices.",
+            "description_ar": "لوحة زيتية عالية الجودة مصنوعة يدوياً بالكامل على قماش بتصميم تجريدي أبيض مزخرف. مثالية لغرف المعيشة والمكاتب الحديثة.",
+            "price": 450,
+            "original_price": 899,
+            "dimensions": "120cm x 80cm",
+            "material_en": "Oil on stretched canvas, wooden frame",
+            "material_ar": "زيت على قماش مشدود، إطار خشبي",
+            "min_order": 10,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1002",
+            "category": "clocks",
+            "image": "/assets/images/product2.png",
+            "name_en": "Handcrafted Decorative Metal & Crystal Modern Silent Wall Clock",
+            "name_ar": "ساعة حائط معدنية مزخرفة بالكريستال - صامتة وحديثة",
+            "description_en": "Elegant handcrafted wall clock with metal and crystal design. Silent movement, perfect for luxury interiors.",
+            "description_ar": "ساعة حائط أنيقة مصنوعة يدوياً بتصميم معدني وكريستالي. حركة صامتة، مثالية للديكور الفاخر.",
+            "price": 320,
+            "original_price": 650,
+            "dimensions": "60cm diameter",
+            "material_en": "Metal, Crystal, Silent quartz movement",
+            "material_ar": "معدن، كريستال، حركة كوارتز صامتة",
+            "min_order": 10,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1003",
+            "category": "oil-paintings",
+            "image": "/assets/images/product3.png",
+            "name_en": "Handmade Oil Painting - Pink Tree on Stretched Canvas",
+            "name_ar": "لوحة زيتية يدوية - شجرة وردية على قماش مشدود",
+            "description_en": "Beautiful handmade oil painting featuring a pink tree design on stretched canvas. Adds elegance to any space.",
+            "description_ar": "لوحة زيتية جميلة مصنوعة يدوياً تتميز بتصميم شجرة وردية على قماش مشدود.",
+            "price": 380,
+            "original_price": 750,
+            "dimensions": "100cm x 70cm",
+            "material_en": "Oil on stretched canvas, wooden frame",
+            "material_ar": "زيت على قماش مشدود، إطار خشبي",
+            "min_order": 10,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1004",
+            "category": "wall-decor",
+            "image": "/assets/images/product4.png",
+            "name_en": "Modern Geometric Metal Wall Art - Gold Finish",
+            "name_ar": "فن جداري معدني هندسي حديث - لمسة ذهبية",
+            "description_en": "Contemporary geometric metal wall art with luxurious gold finish. Statement piece for modern interiors.",
+            "description_ar": "فن جداري معدني هندسي معاصر بلمسة ذهبية فاخرة. قطعة مميزة للديكور الحديث.",
+            "price": 290,
+            "original_price": 580,
+            "dimensions": "90cm x 60cm",
+            "material_en": "Premium metal, Gold-tone finish",
+            "material_ar": "معدن فاخر، لمسة ذهبية",
+            "min_order": 10,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1005",
+            "category": "mirrors",
+            "image": "/assets/images/product5.jpg",
+            "name_en": "Luxury Decorative Sunburst Wall Mirror - Gold Frame",
+            "name_ar": "مرآة حائط ديكورية فاخرة بإطار شمسي ذهبي",
+            "description_en": "Stunning sunburst design wall mirror with gold frame. Adds depth and elegance to any room.",
+            "description_ar": "مرآة حائط بتصميم شمسي مذهل وإطار ذهبي. تضيف عمقاً وأناقة لأي غرفة.",
+            "price": 520,
+            "original_price": 1050,
+            "dimensions": "80cm diameter",
+            "material_en": "High-quality glass, Metal gold frame",
+            "material_ar": "زجاج عالي الجودة، إطار معدني ذهبي",
+            "min_order": 5,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1006",
+            "category": "artificial-flowers",
+            "image": "/assets/images/product6.jpg",
+            "name_en": "Premium Artificial Orchid Arrangement in Ceramic Pot",
+            "name_ar": "تنسيق أوركيد صناعي فاخر في إناء سيراميك",
+            "description_en": "Lifelike artificial orchid arrangement in an elegant ceramic pot. Perfect for home and office décor.",
+            "description_ar": "تنسيق أوركيد صناعي يشبه الطبيعي في إناء سيراميك أنيق. مثالي لديكور المنزل والمكتب.",
+            "price": 180,
+            "original_price": 350,
+            "dimensions": "45cm height",
+            "material_en": "Premium silk flowers, Ceramic pot",
+            "material_ar": "زهور حرير فاخرة، إناء سيراميك",
+            "min_order": 20,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1007",
+            "category": "furniture",
+            "image": "/assets/images/product7.jpg",
+            "name_en": "Modern Gold Metal & Marble Coffee Table",
+            "name_ar": "طاولة قهوة حديثة من المعدن الذهبي والرخام",
+            "description_en": "Elegant coffee table with gold metal frame and natural marble top. A luxurious addition to any living room.",
+            "description_ar": "طاولة قهوة أنيقة بإطار معدني ذهبي وسطح رخامي طبيعي. إضافة فاخرة لأي غرفة معيشة.",
+            "price": 1200,
+            "original_price": 2400,
+            "dimensions": "100cm x 50cm x 45cm",
+            "material_en": "Stainless steel gold-plated, Natural marble",
+            "material_ar": "ستيل مطلي بالذهب، رخام طبيعي",
+            "min_order": 5,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1008",
+            "category": "artificial-trees",
+            "image": "/assets/images/product8.jpg",
+            "name_en": "Large Artificial Olive Tree - 180cm",
+            "name_ar": "شجرة زيتون صناعية كبيرة - 180 سم",
+            "description_en": "Ultra-realistic artificial olive tree standing 180cm tall. Perfect for adding greenery to any indoor space.",
+            "description_ar": "شجرة زيتون صناعية فائقة الواقعية بطول 180 سم. مثالية لإضافة لمسة خضراء لأي مكان داخلي.",
+            "price": 650,
+            "original_price": 1300,
+            "dimensions": "180cm height",
+            "material_en": "Premium polyester leaves, Natural wood trunk",
+            "material_ar": "أوراق بوليستر فاخرة، جذع خشبي طبيعي",
+            "min_order": 5,
+            "in_stock": true
+        },
+        {
+            "id": "WAH-1009",
+            "category": "art-prints",
+            "image": "/assets/images/product9.jpg",
+            "name_en": "Abstract Modern Art Print - Set of 3 Canvas Prints",
+            "name_ar": "مطبوعات فنية تجريدية حديثة - مجموعة من 3 لوحات",
+            "description_en": "Set of 3 modern abstract art prints on premium canvas. Ready to hang with wooden frames.",
+            "description_ar": "مجموعة من 3 مطبوعات فنية تجريدية حديثة على قماش فاخر. جاهزة للتعليق مع إطارات خشبية.",
+            "price": 350,
+            "original_price": 700,
+            "dimensions": "40cm x 60cm each",
+            "material_en": "Premium canvas, Wooden frame",
+            "material_ar": "قماش فاخر، إطار خشبي",
+            "min_order": 10,
+            "in_stock": true
+        }
+    ],
+    "categories": [
+        {
+            "id": "oil-paintings",
+            "name_en": "Oil Paintings",
+            "name_ar": "لوحات زيتية",
+            "image": "/assets/images/oil-paintings.png"
+        },
+        {
+            "id": "art-prints",
+            "name_en": "Art Prints",
+            "name_ar": "مطبوعات فنية",
+            "image": "/assets/images/art-prints.png"
+        },
+        {
+            "id": "wall-decor",
+            "name_en": "Wall Décor",
+            "name_ar": "ديكور حائط",
+            "image": "/assets/images/wall-decor.png"
+        },
+        {
+            "id": "artificial-trees",
+            "name_en": "Artificial Trees",
+            "name_ar": "أشجار صناعية",
+            "image": "/assets/images/artificial-trees.png"
+        },
+        {
+            "id": "artificial-flowers",
+            "name_en": "Artificial Flowers & Plant Pots",
+            "name_ar": "زهور صناعية وأحواض نباتات",
+            "image": "/assets/images/artificial-flowers.png"
+        },
+        {
+            "id": "mirrors",
+            "name_en": "Decorative Wall Mirrors",
+            "name_ar": "مرايا حائط ديكورية",
+            "image": "/assets/images/mirrors.png"
+        },
+        {
+            "id": "clocks",
+            "name_en": "Wall Clocks",
+            "name_ar": "ساعات حائط",
+            "image": "/assets/images/clocks.png"
+        },
+        {
+            "id": "furniture",
+            "name_en": "Coffee & Side Tables | Console Tables | Chairs & More",
+            "name_ar": "طاولات قهوة وجانبية | طاولات كونسول | كراسي والمزيد",
+            "image": "/assets/images/furniture.png"
+        },
+        {
+            "id": "home-decor",
+            "name_en": "Home Decor & Accessories | Vases, Trays, & More",
+            "name_ar": "ديكور منزلي وإكسسوارات | مزهريات، صواني، والمزيد",
+            "image": "/assets/images/home-decor.png"
+        },
+        {
+            "id": "kitchen",
+            "name_en": "Kitchen | Bathroom & More",
+            "name_ar": "مطبخ | حمام والمزيد",
+            "image": "/assets/images/kitchen.png"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Leah D.",
+            "text_en": "It looks beautiful! It's what that large space needed. The colors are neutral, yet still make a soft statement! I like this piece!",
+            "text_ar": "تبدو جميلة! هذا ما كانت تحتاجه تلك المساحة الكبيرة. الألوان محايدة، لكنها لا تزال تعطي لمسة ناعمة!",
+            "product_en": "High Quality 100% Handmade Oil Painting on Canvas",
+            "product_ar": "لوحة زيتية عالية الجودة مصنوعة يدوياً بالكامل",
+            "image": "/assets/images/product1.png",
+            "rating": 5
+        },
+        {
+            "name": "Areesha G.",
+            "text_en": "My first online purchase and I couldn't be more satisfied. Order delivered in time, nicely priced and packaged.",
+            "text_ar": "أول عملية شراء عبر الإنترنت ولا يمكنني أن أكون أكثر رضاً. تم تسليم الطلب في الوقت المحدد، بسعر ممتاز وتغليف رائع.",
+            "product_en": "Handcrafted Decorative Metal & Crystal Modern Wall Clock",
+            "product_ar": "ساعة حائط معدنية مزخرفة بالكريستال",
+            "image": "/assets/images/product2.png",
+            "rating": 5
+        },
+        {
+            "name": "Snooky A.",
+            "text_en": "Amazed with your fast delivery. And the painting, it's really gorgeous! Thank you. Thinking of buying another one soon.",
+            "text_ar": "مندهش من سرعة التوصيل. واللوحة، إنها رائعة حقاً! شكراً لكم. أفكر في شراء واحدة أخرى قريباً.",
+            "product_en": "Handmade Oil Painting of Pink Tree on Stretched Canvas",
+            "product_ar": "لوحة زيتية يدوية - شجرة وردية على قماش مشدود",
+            "image": "/assets/images/product3.png",
+            "rating": 5
+        }
+    ]
+}

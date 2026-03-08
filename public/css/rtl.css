@@ -1,0 +1,57 @@
+/* ===== RTL (Arabic) OVERRIDES ===== */
+html[dir="rtl"] {
+    /* Typography */
+    font-family: var(--font-arabic);
+}
+
+html[dir="rtl"] body,
+html[dir="rtl"] button,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+    font-family: var(--font-arabic);
+}
+
+/* Text alignment */
+html[dir="rtl"] .footer-contact,
+html[dir="rtl"] .footer-links {
+    text-align: right;
+}
+
+html[dir="rtl"] .nav-list {
+    flex-direction: row-reverse;
+}
+
+/* Dropdown positioning */
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%) translateY(10px);
+}
+
+html[dir="rtl"] .has-dropdown:hover .dropdown-menu {
+    transform: translateX(50%) translateY(0);
+}
+
+/* Product badges */
+html[dir="rtl"] .product-card-badge {
+    left: auto;
+    right: var(--space-md);
+}
+
+/* Mobile nav */
+@media (max-width: 900px) {
+    html[dir="rtl"] .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* Footer mobile center */
+@media (max-width: 480px) {
+
+    html[dir="rtl"] .footer-contact,
+    html[dir="rtl"] .footer-links {
+        text-align: center;
+    }
+}
