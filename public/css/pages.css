@@ -1,0 +1,61 @@
+/* ===== PAGES STYLES (About & Contact) ===== */
+.page-section {
+    padding: var(--space-3xl) var(--space-xl);
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.page-title {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xl);
+    text-align: center;
+}
+
+.page-content {
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.page-content p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+}
+
+.contact-info-block {
+    margin-top: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-size-lg);
+}
+
+.contact-item strong {
+    color: var(--color-primary);
+    min-width: 80px;
+}
+
+.contact-item a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: var(--color-primary);
+}
+
+html[dir="rtl"] .contact-item strong {
+    min-width: 100px;
+}

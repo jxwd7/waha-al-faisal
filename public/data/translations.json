@@ -62,7 +62,17 @@
         "start_shopping": "Start Shopping",
         "quote_submitted": "Quote request submitted! We will contact you shortly.",
         "our_policy": "Our Policy",
-        "lang_toggle": "عربي"
+        "lang_toggle": "عربي",
+        "about_heading": "About Waha Al Faisal Trading",
+        "about_text_1": "Waha Al Faisal Trading is a premier wholesaler of luxury home décor based in Jeddah, Saudi Arabia. We specialize in curating high-quality, elegant pieces that transform any space.",
+        "about_text_2": "With a commitment to excellence and a passion for design, we offer a diverse range of products including handmade oil paintings, artisan wall clocks, decorative mirrors, and realistic artificial plants.",
+        "about_text_3": "Our goal is to provide businesses, interior designers, and retailers across the Kingdom with unparalleled access to premium home accessories at competitive wholesale prices.",
+        "contact_heading": "Get In Touch",
+        "contact_text": "We are here to assist you with any inquiries regarding our wholesale catalog, bulk pricing, or showroom visits. Please feel free to reach out to us using the contact details below.",
+        "address_label": "Address:",
+        "phone_label": "Phone:",
+        "email_label": "Email:",
+        "working_hours": "Working Hours: Sunday - Thursday, 9:00 AM - 6:00 PM"
     },
     "ar": {
         "announcement": "🌟 طلبات بالجملة فقط — أسعار الجملة في جميع أنحاء المملكة العربية السعودية 🌟",
@@ -127,6 +137,16 @@
         "start_shopping": "ابدأ التسوق",
         "quote_submitted": "تم إرسال طلب عرض السعر! سنتواصل معكم قريباً.",
         "our_policy": "سياستنا",
-        "lang_toggle": "English"
+        "lang_toggle": "English",
+        "about_heading": "عن مؤسسة وهاء الفيصل للتجارة",
+        "about_text_1": "مؤسسة وهاء الفيصل للتجارة هي شركة رائدة في بيع ديكورات المنازل الفاخرة بالجملة، ومقرها الرئيسي في مدينة جدة بالمملكة العربية السعودية. نحن متخصصون في انتقاء القطع الأنيقة وعالية الجودة التي تحول أي مساحة.",
+        "about_text_2": "مع التزامنا بالتميز وشغفنا بالتصميم، نقدم مجموعة متنوعة من المنتجات بما في ذلك اللوحات الزيتية المصنوعة يدوياً، وساعات الحائط الفنية، والمرايا الديكورية، والنباتات الصناعية الواقعية.",
+        "about_text_3": "هدفنا هو تزويد الشركات ومصممي الديكور الداخلي وتجار التجزئة في جميع أنحاء المملكة بفرصة الحصول على إكسسوارات منزلية فاخرة بأسعار جملة تنافسية.",
+        "contact_heading": "تواصل معنا",
+        "contact_text": "نحن هنا لمساعدتك في أي استفسارات تتعلق بكتالوج الجملة الخاص بنا، أو أسعار الجملة، أو زيارات المعرض. لا تتردد في التواصل معنا باستخدام تفاصيل الاتصال أدناه.",
+        "address_label": "العنوان:",
+        "phone_label": "الهاتف:",
+        "email_label": "البريد الإلكتروني:",
+        "working_hours": "ساعات العمل: الأحد - الخميس، 9:00 صباحاً - 6:00 مساءً"
     }
 }

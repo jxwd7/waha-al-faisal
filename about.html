@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Waha Al Faisal Trading</title>
+    <meta name="description"
+        content="Learn about Waha Al Faisal Trading, the premier wholesaler of luxury home décor in Saudi Arabia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/rtl.css">
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcement-bar">
+        <p data-i18n="announcement">🌟 Bulk Orders Only — Wholesale Pricing Across Saudi Arabia 🌟</p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="site-header"
+        style="position: sticky; background: rgba(255, 255, 255, 0.98); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+        <div class="header-container">
+            <a href="/" class="logo-link">
+                <img src="/assets/images/logo.png" alt="Waha Al Faisal Trading" class="logo-img" id="logo">
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="/" data-i18n="nav_home" class="nav-link">Home</a></li>
+                    <li><a href="/#collections" data-i18n="nav_shop" class="nav-link">Shop Now</a></li>
+                    <li><a href="/contact.html" data-i18n="nav_contact" class="nav-link">Contact Us</a></li>
+                    <li><a href="/about.html" data-i18n="nav_about" class="nav-link active">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-toggle-btn" id="lang-toggle" aria-label="Switch language">
+                    <span data-i18n="lang_toggle">عربي</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="page-section">
+        <h1 class="page-title" data-i18n="about_heading">About Waha Al Faisal Trading</h1>
+        <div class="page-content">
+            <p data-i18n="about_text_1">Waha Al Faisal Trading is a premier wholesaler of luxury home décor based in
+                Jeddah, Saudi Arabia. We specialize in curating high-quality, elegant pieces that transform any space.
+            </p>
+            <p data-i18n="about_text_2">With a commitment to excellence and a passion for design, we offer a diverse
+                range of products including handmade oil paintings, artisan wall clocks, decorative mirrors, and
+                realistic artificial plants.</p>
+            <p data-i18n="about_text_3">Our goal is to provide businesses, interior designers, and retailers across the
+                Kingdom with unparalleled access to premium home accessories at competitive wholesale prices.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/assets/images/logo.png" alt="Waha Al Faisal" class="footer-logo">
+                <p class="footer-company">Waha Al Faisal Trading</p>
+                <p class="footer-tagline" data-i18n="bulk_notice">WHOLESALER — Bulk Orders Only</p>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer_contact">Contact Us</h3>
+                <p data-i18n="footer_address">UNIT#703 Al-Hindawiayh Plaza, Jeddah, Kingdom of Saudi Arabia</p>
+                <p><a href="tel:+966506748968" data-i18n="footer_phone">+966506748968</a></p>
+                <p><a href="mailto:estabilishmentalfaisal@gmail.com"
+                        data-i18n="footer_email">estabilishmentalfaisal@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><span data-i18n="footer_copyright">© 2026, Waha Al Faisal Trading</span> · <span
+                    data-i18n="footer_rights">All Rights Reserved</span></p>
+        </div>
+    </footer>
+
+    <script type="module">
+        import { initI18n } from '/js/i18n.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initI18n();
+
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mainNav = document.getElementById('main-nav');
+            if (mobileMenuBtn && mainNav) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mainNav.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
