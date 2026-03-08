@@ -183,7 +183,7 @@ function openProductModal(productId) {
     document.getElementById('modal-original-price').style.display = 'none';
     const saleBadge = document.querySelector('.modal-sale-badge');
     if (saleBadge) saleBadge.style.display = 'none';
-    document.getElementById('modal-min-order').textContent = `${t('min_order').replace('10', product.min_order)}`;
+    document.getElementById('modal-min-order').style.display = 'none';
     document.getElementById('modal-dimensions').textContent = product.dimensions;
     document.getElementById('modal-material').textContent = lang === 'ar' ? product.material_ar : product.material_en;
     document.getElementById('modal-description').textContent = lang === 'ar' ? product.description_ar : product.description_en;
@@ -207,16 +207,7 @@ function openProductModal(productId) {
         : `Hello, I would like to inquire about bulk pricing for:\n${product.id} - ${name}`;
     inquireBtn.href = `https://wa.me/966506748968?text=${encodeURIComponent(message)}`;
 
-    // Quantity controls
-    const qtyInput = document.getElementById('modal-qty');
-    document.getElementById('qty-minus')?.addEventListener('click', () => {
-        const val = parseInt(qtyInput.value) || 1;
-        if (val > 1) qtyInput.value = val - 1;
-    });
-    document.getElementById('qty-plus')?.addEventListener('click', () => {
-        const val = parseInt(qtyInput.value) || 0;
-        qtyInput.value = val + 1;
-    });
+    // Quantity controls removed for pure catalog
 
     // Show modal
     modal?.classList.add('active');

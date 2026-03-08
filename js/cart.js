@@ -33,16 +33,12 @@ export function closeCart() {
 
 export function addToCart(product, quantity) {
     const existing = cartItems.find(item => item.id === product.id);
-    if (existing) {
-        existing.quantity += quantity;
-    } else {
+    if (!existing) {
         cartItems.push({
             id: product.id,
             name_en: product.name_en,
             name_ar: product.name_ar,
-            image: product.image,
-            price: product.price,
-            quantity: quantity
+            image: product.image
         });
     }
     saveCart();
@@ -63,8 +59,7 @@ function saveCart() {
 
 function updateCartCount() {
     const countEl = document.getElementById('cart-count');
-    const total = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-    if (countEl) countEl.textContent = total;
+    if (countEl) countEl.textContent = cartItems.length;
 }
 
 function renderCartItems() {
@@ -88,9 +83,6 @@ function renderCartItems() {
       <div class="cart-item-details">
         <p class="cart-item-name">${lang === 'ar' ? item.name_ar : item.name_en}</p>
         <p class="cart-item-code">${item.id}</p>
-        <div class="cart-item-qty">
-          <span>${t('quantity')}: ${item.quantity}</span>
-        </div>
         <button class="cart-item-remove" data-id="${item.id}">${lang === 'ar' ? 'إزالة' : 'Remove'}</button>
       </div>
     </div>
@@ -126,7 +118,7 @@ function generateOrderMessage() {
     const header = lang === 'ar' ? 'طلب عرض سعر من وهاء الفيصل للتجارة\n\n' : 'Quote Request from Waha Al Faisal Trading\n\n';
     const items = cartItems.map(item => {
         const name = lang === 'ar' ? item.name_ar : item.name_en;
-        return `• ${item.id} - ${name}\n  ${t('quantity')}: ${item.quantity}`;
+        return `• ${item.id} - ${name}`;
     }).join('\n\n');
     const footer = '';
     return header + items + footer;
