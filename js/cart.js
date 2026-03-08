@@ -89,8 +89,7 @@ function renderCartItems() {
         <p class="cart-item-name">${lang === 'ar' ? item.name_ar : item.name_en}</p>
         <p class="cart-item-code">${item.id}</p>
         <div class="cart-item-qty">
-          <span class="cart-item-price">${item.price} ${t('sar')}</span>
-          <span>× ${item.quantity}</span>
+          <span>${t('quantity')}: ${item.quantity}</span>
         </div>
         <button class="cart-item-remove" data-id="${item.id}">${lang === 'ar' ? 'إزالة' : 'Remove'}</button>
       </div>
@@ -102,10 +101,9 @@ function renderCartItems() {
         btn.addEventListener('click', () => removeFromCart(btn.dataset.id));
     });
 
-    // Update total
-    const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    // Update total (Hidden since prices are removed)
     const totalEl = document.getElementById('cart-total-amount');
-    if (totalEl) totalEl.textContent = `${total.toLocaleString()} ${t('sar')}`;
+    if (totalEl) totalEl.textContent = t('price');
 
     // Update WhatsApp link
     const whatsappBtn = document.getElementById('whatsapp-order-btn');
@@ -128,10 +126,9 @@ function generateOrderMessage() {
     const header = lang === 'ar' ? 'طلب عرض سعر من وهاء الفيصل للتجارة\n\n' : 'Quote Request from Waha Al Faisal Trading\n\n';
     const items = cartItems.map(item => {
         const name = lang === 'ar' ? item.name_ar : item.name_en;
-        return `• ${item.id} - ${name}\n  ${t('quantity')}: ${item.quantity} | ${t('price')}: ${item.price} ${t('sar')}`;
+        return `• ${item.id} - ${name}\n  ${t('quantity')}: ${item.quantity}`;
     }).join('\n\n');
-    const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const footer = `\n\n${t('total')}: ${total.toLocaleString()} ${t('sar')}`;
+    const footer = '';
     return header + items + footer;
 }
 

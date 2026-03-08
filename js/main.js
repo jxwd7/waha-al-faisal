@@ -71,9 +71,7 @@ function renderFeaturedProducts(filterCategory = null) {
           <p class="product-card-code">${product.id}</p>
           <h3 class="product-card-title">${name}</h3>
           <div class="product-card-pricing">
-            <span class="product-card-price">${product.price}</span>
-            <span class="product-card-original">${product.original_price}</span>
-            <span class="product-card-currency">${t('sar')}</span>
+            <span class="product-card-price" style="font-size: 0.9rem; color: var(--color-accent); font-weight: 500;">${t('price')}</span>
           </div>
         </div>
       </div>
@@ -180,8 +178,11 @@ function openProductModal(productId) {
     document.getElementById('modal-product-image').alt = lang === 'ar' ? product.name_ar : product.name_en;
     document.getElementById('modal-item-code').textContent = product.id;
     document.getElementById('modal-title').textContent = lang === 'ar' ? product.name_ar : product.name_en;
-    document.getElementById('modal-price').textContent = `${product.price} ${t('sar')}`;
-    document.getElementById('modal-original-price').textContent = `${product.original_price} ${t('sar')}`;
+    document.getElementById('modal-price').textContent = t('price');
+    document.getElementById('modal-price').style.fontSize = '1.1rem';
+    document.getElementById('modal-original-price').style.display = 'none';
+    const saleBadge = document.querySelector('.modal-sale-badge');
+    if (saleBadge) saleBadge.style.display = 'none';
     document.getElementById('modal-min-order').textContent = `${t('min_order').replace('10', product.min_order)}`;
     document.getElementById('modal-dimensions').textContent = product.dimensions;
     document.getElementById('modal-material').textContent = lang === 'ar' ? product.material_ar : product.material_en;
